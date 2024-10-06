@@ -49,7 +49,7 @@ function App() {
   // console.log(coorArray);
   return (
     <div className="App">
-      <h1>Dengue Clusters List</h1>
+      <h1>Singapore Dengue Clusters List</h1>
       <div style={{ display: "flex", justifyContent: "center" }}>
         {coor.length > 0 && <Map coordinates={coor} />}
       </div>

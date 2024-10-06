@@ -4,12 +4,12 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
 const defaultIcon = new L.Icon({
-  iconUrl: require("leaflet/dist/images/marker-icon.png"), // Path to marker icon
-  iconSize: [15, 20], // Size of the icon
+  iconUrl: require("../dengue-fever.png"), // Path to marker icon
+  iconSize: [50, 50], // Size of the icon
   iconAnchor: [7, 20], // Point of the icon which will correspond to marker's location
   popupAnchor: [1, -34], // Point from which the popup should open relative to the iconAnchor
-  //   shadowUrl: require("leaflet/dist/images/marker-shadow.png"), // Path to shadow icon
-  //   shadowSize: [41, 41], // Size of the shadow
+  shadowUrl: require("leaflet/dist/images/marker-shadow.png"), // Path to shadow icon
+  shadowSize: [41, 41], // Size of the shadow
 });
 
 const Map = ({ coordinates }) => {
@@ -18,7 +18,7 @@ const Map = ({ coordinates }) => {
     <MapContainer
       center={position}
       zoom={13}
-      style={{ height: "600px", width: "60%" }}
+      style={{ height: "800px", width: "90%" }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
